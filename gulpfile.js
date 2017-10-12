@@ -38,7 +38,7 @@ gulp.task('publish-fonts', function () {
 
 // optimize images under app/src/images and save the results to app/dist/images
 gulp.task('publish-images', function () {
-    var imagesWithoutSVG = ['app/src/images/**/*', '!app/src/images/**/*.svg'];
+    var imagesWithoutSVG = ['app/src/images/**/**/*', '!app/src/images/**/*.svg'];
     var SVGs = 'app/src/images/**/*.svg';
 
     return streamSeries(
